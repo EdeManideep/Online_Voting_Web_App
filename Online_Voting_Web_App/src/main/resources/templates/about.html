@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Online Voting System</title>
+    <link rel="stylesheet" th:href="@{/css/about.css}" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+</head>
+<body>
+    <div th:replace="~{base::layout(~{::section})}"></div>
+    <div class="about-page">
+        <section class="about-section">
+            <div class="container">
+				<h1><span>Online Voting System</span></h1>
+                <p class="intro-text">Welcome to the Online Voting System, your trusted platform for secure and convenient voting.</p>
+                
+                <div class="features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li class="li-about"><strong>Secure and Encrypted:</strong> We use state-of-the-art encryption to ensure the privacy and integrity of your vote.</li>
+                        <li class="li-about"><strong>Accessible from Anywhere:</strong> Vote from the comfort of your home, office, or anywhere with an internet connection.</li>
+                        <li class="li-about"><strong>User-Friendly Interface:</strong> Our system is designed to be easy to use, ensuring a smooth voting experience for all users.</li>
+                        <li class="li-about"><strong>Real-Time Results:</strong> Get instant access to voting results as soon as they are available.</li>
+                    </ul>
+                </div>
+
+                <div class="how-it-works">
+                    <h2>How It Works</h2>
+                    <ol>
+                        <li class="li-about">Register: Create an account with your valid information to get started.</li>
+                        <li class="li-about">Verify Your Identity: We ensure the security of your vote by verifying your identity.</li>
+                        <li class="li-about">Cast Your Vote: When an election is active, log in, and cast your vote securely.</li>
+                        <li class="li-about">Track Results: Follow the progress of the election and access real-time results.</li>
+                    </ol>
+                </div>
+
+                <div class="security">
+                    <h2>Security & Trust</h2>
+                    <p>We take security seriously. Our online voting system is designed to protect the integrity of the electoral process and safeguard your vote. We employ the latest security measures to prevent tampering or fraud.</p>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions, concerns, or feedback, please don't hesitate to contact us at <a href="mailto:manideepede9@gmail.com">manideepede9@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+    <title>Voting Web App</title>
+  </head>
+  
+  <body> 
+	   <div class="base-page">
+			<!-- Navbar -->
+			<nav class="navbar">
+			  <ul class="ul-navbar">
+			    <li class="li-navbar"><a th:href="@{/}">Home</a></li>
+			    <li class="li-navbar"><a th:href="@{/register}">New Voter Registration</a></li>
+			    <li class="li-navbar"><a th:href="@{/user}"> Signin</a></li>
+			    <li class="li-navbar"><a th:href="@{/about}">About</a></li>
+			  </ul>
+			</nav>
+	   </div>
+	    
+  </body>
+</html>

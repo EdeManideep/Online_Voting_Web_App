@@ -1,0 +1,108 @@
+.about-page {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+	text-align: center;
+}
+
+h1 span {
+    color: #3498db;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+p{
+    line-height: 1.6;
+	text-align: center;
+}
+
+.li-about {
+    line-height: 1.6;
+	text-align: center;
+	list-style-type: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+	width: 100%;
+	padding-bottom: 0px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border-radius: 8px;
+	width: 65%;
+	padding-bottom: 1px;
+	margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #7f8c8d;
+	margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.features, .how-it-works, .security, .contact {
+    margin-bottom: 40px;
+}
+
+.features ul, .how-it-works ol {
+    padding-left: 20px;
+}
+
+.features li, .how-it-works li {
+    margin-bottom: 10px;
+}
+
+.features li::before, .how-it-works li::before {
+    content: "✔";
+    margin-right: 8px;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+}

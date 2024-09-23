@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	
+	<section class="center">
+		<div class="text-center">
+		
+				       <img src=https://th.bing.com/th/id/R.e3a9059d464118cb8bd7505f984090dd?rik=0NOOc0K0XSvwGA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-kvtfDUZtSVI%2fUX_5lnCz-MI%2fAAAAAAAAAnM%2f_Kfo_PP_Js8%2fs1600%2fklu_logo.png&ehk=BE4uwD0J%2bMGbn8mwRs4cqzN37KJxpHM1QYDpX3OcJsc%3d&risl=&pid=ImgRaw&r=0 alt="Image" width="150" height="150">
+
+			<p style="font-size: 30px;" class="font-weight-bold">Online Voting Application</p>
+			
+			<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:red"></h3>
+   			<th:block th:text="${#session.removeAttribute('msg')}"></th:block>		
+	
+	</section>
+</body>
+</html>
